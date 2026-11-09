@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# Secrets - never commit your real .env
+.env
+
+# Data created while the app runs
+backend/instance/*.db
+backend/logs/*.log*
+
+# Node
+node_modules/
+dist/
+
+# Editor / OS
+.DS_Store
+Thumbs.db

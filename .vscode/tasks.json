@@ -1,0 +1,30 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Backend: run Flask (port 5000)",
+      "type": "shell",
+      "command": "venv/bin/python app.py",
+      "windows": { "command": ".\\venv\\Scripts\\python.exe app.py" },
+      "options": { "cwd": "${workspaceFolder}/backend" },
+      "isBackground": true,
+      "problemMatcher": [],
+      "presentation": { "panel": "dedicated", "group": "servers" }
+    },
+    {
+      "label": "Frontend: run Vite (port 5173)",
+      "type": "shell",
+      "command": "npm run dev",
+      "windows": { "command": "npm.cmd run dev" },
+      "options": { "cwd": "${workspaceFolder}/frontend" },
+      "isBackground": true,
+      "problemMatcher": [],
+      "presentation": { "panel": "dedicated", "group": "servers" }
+    },
+    {
+      "label": "Run everything",
+      "dependsOn": ["Backend: run Flask (port 5000)", "Frontend: run Vite (port 5173)"],
+      "problemMatcher": []
+    }
+  ]
+}
