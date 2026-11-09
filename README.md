@@ -110,7 +110,7 @@ In VS Code you can instead press `Ctrl+Shift+P`, choose **Tasks: Run Task**, and
 
 | Username | Password | Role |
 |---|---|---|
-| admin | Admin12345 | Admin |
+| admin | admin123 | Admin |
 | analyst | Analyst12345 | Quality Analyst |
 | technician | Technician12345 | Lab Technician |
 
